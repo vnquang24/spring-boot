@@ -24,7 +24,7 @@ public class ProductSuggestion {
     private String suggestedCategory;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "status", columnDefinition = "varchar(20) default 'PENDING'")
+    @Column(name = "status", columnDefinition = "varchar(20)")
     private SuggestionStatus status = SuggestionStatus.PENDING;
 
     @Column(name = "created_at", columnDefinition = "timestamp default CURRENT_TIMESTAMP")

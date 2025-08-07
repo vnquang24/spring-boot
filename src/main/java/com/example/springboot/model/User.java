@@ -29,7 +29,7 @@ public class User {
     private String address;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "role", columnDefinition = "varchar(10) default 'USER'")
+    @Column(name = "role", columnDefinition = "varchar(10)")
     private UserRole role = UserRole.USER;
 
     @Column(name = "is_active", columnDefinition = "boolean default false")

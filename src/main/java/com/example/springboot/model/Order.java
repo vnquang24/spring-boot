@@ -27,7 +27,7 @@ public class Order {
     private String paymentMethod;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "status", columnDefinition = "varchar(20) default 'PENDING'")
+    @Column(name = "status", columnDefinition = "varchar(20)")
     private OrderStatus status = OrderStatus.PENDING;
 
     @ManyToOne(fetch = FetchType.LAZY)
